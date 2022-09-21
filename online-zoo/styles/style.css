@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    width: 1600px;
+}
+
+/* header */
+
+.menu {
+    background: #000000;
+    backdrop-filter: blur(2px);
+}
+
+.menu-container {
+    display: flex;
+    padding: 14px 220px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.main-title {
+    width: 82px;
+    height: 52px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    position: relative;
+}
+
+.main-title img {
+    position: absolute;
+    bottom: 8px;
+    right: 56px;
+}
+
+.main-title h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    padding-left: 63px;
+    gap: 58px;
+}
+
+.navigation li {
+    list-style-type: none;
+}
+
+.navigation li a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-link {
+    margin-left: 438px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* main */
+
+/* Watch your favorite animal online */
+
+.Watch_your_favorite_animal_online {
+    height: 718px;
+    background: url(../images/GiantPanda.jpg);
+    padding: 104px 216.69px 0 880px;
+    position: relative;
+}
+
+.animal-online {
+    text-align: center;
+    position: relative;
+}
+
+.Watch_your_favorite_animal_online::before{
+    position: absolute;
+    bottom: 225px;
+    right: 326px;
+    content: "";
+    width: 465px;
+    height: 465px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+}
+
+.animal-title h2{
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.animal-title h2 span {
+    color: #FFEE2E;
+}
+
+.animal-online-button {
+    margin: 60px 0 0 0;
+    width: 298px;
+    height: 54px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+}
