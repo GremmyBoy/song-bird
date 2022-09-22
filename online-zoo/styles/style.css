@@ -16,6 +16,7 @@ body {
     line-height: 16px;
     color: #fff;
     width: 1600px;
+    /* border: 1px solid black; */
 }
 
 /* header */
@@ -151,4 +152,173 @@ body {
     color: #FFFFFF;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
+    border: transparent;
+}
+
+/* The_backstage */
+
+.The_backstage {
+    padding: 140px 220px 180px 219px;
+    position: relative;
+}
+
+.backstage-block {
+    display: flex;
+    width: 1161px;
+    height: 403px;
+}
+
+.backstage-img {
+    width: 609px;
+}
+
+.backstage-text {
+    width: 552px;
+    padding-left: 87px;
+}
+
+.backstage-text h2 {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: #333B41;
+}
+
+.backstage-text p:nth-child(2) {
+    margin: 20px 0 54px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333B41;
+}
+
+.backstage-text h3 {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+}
+
+.backstage-text p:nth-child(4) {
+    margin: 34px 0 0 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333B41;
+}
+
+.flower-foto-1 {
+    position: absolute;
+    bottom: 110px;
+    left: 1395px;
+}
+
+/* Pets */
+
+.pets {
+    height: 1106px;
+    padding: 0 222px 100px 220px;
+    position: relative;
+}
+
+.pets-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1158px;
+    height: 872px;
+    gap: 30px;
+}
+
+.pets-block {
+    width: 366px;
+    height: 426px;
+    border: 0.2px solid #FA6F32;
+    border-radius: 5px;
+}
+
+.pets-img {
+    width: 364px;
+    border-radius:5px 5px 0 0;
+}
+
+.pets-description {
+    display: flex;
+    padding: 2px 12px 14px 16px;
+    justify-content: space-between;
+}
+
+.pets-text {
+    
+}
+
+.pets-text h2 {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000
+}
+
+.pets-text p {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.pets-button {
+    margin: 80px 0 0 430px;
+    width: 298px;
+    height: 54px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #FE9013;
+    border-radius: 25px;
+    border: transparent;
+}
+
+.arrow-pets-left {
+    position: absolute;
+    bottom: 635px;
+    left: 136px;
+}
+
+.arrow-pets-right {
+    position: absolute;
+    bottom: 635px;
+    left: 1400px;
+}
+
+.palm-photo {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.strelitzia-pets {
+    position: absolute;
+    bottom: 0px;
+    left: 1230px;
 }
