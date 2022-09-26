@@ -10,7 +10,7 @@
 <body>
     <header class="menu">
         <div class="menu-container">
-            <a class="logo" href="#">
+            <a class="logo" href="index.html">
                 <div class="main-title">
                     <h1>PetStory online</h1>
                     <img src="../../icons/bamboo.svg" alt="#">
@@ -18,14 +18,14 @@
             </a>
             <nav>
                 <ul class="navigation">
-                    <li><a href="#">About</a></li>
+                    <li><a class="active" href="index.html">About</a></li>
                     <li><a href="#">Map</a></li>
                     <li><a href="#">Zoos</a></li>
                     <li><a href="#">Donate</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </nav>
-            <a class="header-link" href="#">Designed by ©
+            <a class="header-link" href="https://www.figma.com/files/recent?fuid=1079442653449101893" target="_blank">Designed by ©
             </a>
         </div>
     </header>
@@ -52,16 +52,22 @@
         </section>
         <section class="pets">
             <div class="pets-container">
-                <div class="pets-block"><img class="pets-img" src="../../images/Pandas.jpg" alt="Pandas">
+                <div class="pets-block">
+                    <div class="pets-img-block">
+                        <img class="pets-img" id="pets-img" src="../../images/Pandas.jpg" alt="Pandas">
+                    </div>
                     <div class="pets-description">
-                        <div class="pets-text">
+                        <div class="pets-text" id="pets-text">
                            <h2>giant Pandas</h2>
                            <p>Native to Southwest China</p> 
                         </div>
                         <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
                     </div>
                 </div>
-                <div class="pets-block"><img class="pets-img" src="../../images/Eagles.jpg" alt="Eagles">
+                <div class="pets-block">
+                    <div class="pets-img-block">
+                        <img class="pets-img" src="../../images/Eagles.jpg" alt="Eagles">
+                    </div>
                     <div class="pets-description">
                         <div class="pets-text">
                            <h2>Eagles</h2>
@@ -70,7 +76,10 @@
                         <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
                     </div>
                 </div>
-                <div class="pets-block"><img class="pets-img" src="../../images/Gorillas.jpg" alt="Gorillas">
+                <div class="pets-block">
+                    <div class="pets-img-block">
+                        <img class="pets-img" src="../../images/Gorillas.jpg" alt="Gorillas">
+                    </div>
                     <div class="pets-description">
                         <div class="pets-text">
                            <h2>Gorillas</h2>
@@ -79,7 +88,10 @@
                         <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
                     </div>
                 </div>
-                <div class="pets-block"><img class="pets-img" src="../../images/Sloths.jpg" alt="Sloths">
+                <div class="pets-block">
+                    <div class="pets-img-block">
+                        <img class="pets-img" src="../../images/Sloths.jpg" alt="Sloths">
+                    </div>
                     <div class="pets-description">
                         <div class="pets-text">
                            <h2>Two-toed Sloth</h2>
@@ -88,7 +100,10 @@
                         <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
                     </div>
                 </div>
-                <div class="pets-block"><img class="pets-img" src="../../images/Cheeatas.jpg" alt="Cheetahs">
+                <div class="pets-block">
+                    <div class="pets-img-block">
+                        <img class="pets-img" src="../../images/Cheeatas.jpg" alt="Cheetahs">
+                    </div>
                     <div class="pets-description">
                         <div class="pets-text">
                            <h2>cheetahs</h2>
@@ -97,7 +112,10 @@
                         <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
                     </div>
                 </div>
-                <div class="pets-block"><img class="pets-img" src="../../images/Penguins.jpg" alt="Penguins">
+                <div class="pets-block">
+                    <div class="pets-img-block">
+                        <img class="pets-img" src="../../images/Penguins.jpg" alt="Penguins">
+                    </div>
                     <div class="pets-description">
                         <div class="pets-text">
                            <h2>Penguins</h2>
@@ -223,5 +241,83 @@
             <img class="leave-foto" src="../../images/leav_foto.png" alt="Leave">
         </section>
     </main>
+    <footer class="footer-menu">
+        <div class="footer-container">
+            <div class="footer-head">
+                <a class="logo" href="#">
+                    <div class="main-title">
+                        <h1>PetStory online</h1>
+                        <img src="../../icons/bamboo.svg" alt="#">
+                    </div>
+                </a>
+                <div class="subscribe-form">
+                    <h3>Subscribe to our news</h3>
+                    <form class="subscribe-field" action="">
+                        <input class="footer-input" type="email" name="email" placeholder="Enter your email" required>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+            <button class="footer-btn">donate for volunteers</button>
+            <div class="footer-links">
+                <div class="social-links">
+                    <ul class="social-links-nav">
+                        <li>
+                           <a class="social-link" href="https://ru-ru.facebook.com/" target="_blank">
+                            <div class="social-links-block">
+                                <div class="social-network">
+                                    <img src="../../icons/facebook-icon.svg" alt="facebook">
+                                    </div>
+                                <div class="social-network-text">Facebook</div>
+                            </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="social-link" href="https://twitter.com/?lang=ru" target="_blank">
+                            <div class="social-links-block">
+                                <div class="social-network">
+                                    <img src="../../icons/twitter-icon.svg" alt="twitter">
+                                </div>
+                                <div class="social-network-text">Twitter</div>
+                            </div>
+                           </a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="https://www.instagram.com/" target="_blank">
+                                <div class="social-links-block">
+                                    <div class="social-network">
+                                        <img src="../../icons/instagram-icon.svg" alt="instagram">
+                                    </div>
+                                    <div class="social-network-text">Instagram</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="https://www.youtube.com/" target="_blank">
+                                <div class="social-links-block">
+                                    <div class="social-network">
+                                        <img src="../../icons/youtube-icon.svg" alt="youtube">
+                                    </div>
+                                    <div class="social-network-text">YouTube</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul class="navigation footer">
+                        <li><a class="active" href="#">About</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Zoos</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+                <a class="design" href="#">
+                    <p class="design-text">Designed by Alisa Samborskaya</p>
+                    <p class="design-text">©RSSchool & ©Yem Digital 2021</p>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

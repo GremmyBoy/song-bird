@@ -36,6 +36,11 @@ body {
 
 .logo {
     text-decoration: none;
+    transition: .2s all;
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
 
 .main-title {
@@ -82,6 +87,19 @@ body {
     line-height: 140%;
     color: #FFFFFF;
     text-decoration: none;
+    transition: 1s ease-in;
+}
+
+.navigation li a.active {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent;
+}
+
+.navigation li a:hover {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent;
 }
 
 .header-link {
@@ -93,6 +111,13 @@ body {
     line-height: 140%;
     color: #FFFFFF;
     text-decoration: none;
+    transition: 1s ease-in;
+}
+
+.header-link:hover {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent;
 }
 
 /* main */
@@ -153,6 +178,17 @@ body {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
     border: transparent;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.animal-online-button:hover {
+    background: linear-gradient(113.96deg, #df6d3d 1.49%, #9b5506 101.44%);
+    transform: scale(1.1);
+}
+
+.animal-online-button:active {
+    background: linear-gradient(113.96deg, #4de71a 1.49%, #0a9d2c 101.44%);
 }
 
 /* The_backstage */
@@ -244,21 +280,57 @@ body {
     height: 426px;
     border: 0.2px solid #FA6F32;
     border-radius: 5px;
+    overflow: hidden;
+}
+
+.pets-img-block {
+    border-radius:5px 5px 0 0;
+    height: 364px;
+    transition: .5s all;
+    background-color: black;
+    overflow: hidden;
 }
 
 .pets-img {
     width: 364px;
     border-radius:5px 5px 0 0;
+    transition: .5s all;
+}
+
+.pets-block:hover .pets-img {
+    opacity: 0.5;
+    transform: scale(1.1);
+} 
+
+.pets-block:hover .pets-description {
+    bottom: 60px;
+}
+
+.pets-block:hover .pets-description img {
+    opacity: 0;
+}
+
+.pets-block:hover .pets-description {
+    color: white;
 }
 
 .pets-description {
     display: flex;
     padding: 2px 12px 14px 16px;
     justify-content: space-between;
+    transition: .5s all;
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    color: #000000;
 }
 
 .pets-text {
-    
+}
+
+.pets-description img {
+    transition: .5s all;
+    opacity: 1;
 }
 
 .pets-text h2 {
@@ -269,7 +341,6 @@ body {
     font-size: 16px;
     line-height: 140%;
     text-transform: uppercase;
-    color: #000000
 }
 
 .pets-text p {
@@ -279,7 +350,6 @@ body {
     font-weight: 300;
     font-size: 15px;
     line-height: 120%;
-    color: #000000;
 }
 
 .pets-button {
@@ -294,21 +364,44 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: #FE9013;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
     border: transparent;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.pets-button:hover {
+    background: linear-gradient(113.96deg, #df6d3d 1.49%, #9b5506 101.44%);
+    transform: scale(1.1);
+}
+
+.pets-button:active {
+    background: linear-gradient(113.96deg, #4de71a 1.49%, #0a9d2c 101.44%);
 }
 
 .arrow-pets-left {
     position: absolute;
     bottom: 635px;
     left: 136px;
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.arrow-pets-left:hover {
+    transform: scale(1.1);
 }
 
 .arrow-pets-right {
     position: absolute;
     bottom: 635px;
     left: 1400px;
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.arrow-pets-right:hover {
+    transform: scale(1.1);
 }
 
 .palm-photo {
@@ -460,6 +553,17 @@ body {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
     border: transparent;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.pick-friend-btn:hover {
+    background: linear-gradient(113.96deg, #df6d3d 1.49%, #9b5506 101.44%);
+    transform: scale(1.1);
+}
+
+.pick-friend-btn:active {
+    background: linear-gradient(113.96deg, #4de71a 1.49%, #0a9d2c 101.44%);
 }
 
 /* testimonials */
@@ -585,12 +689,211 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     cursor: pointer;
+    transition: .3s all;
+}
+
+.testimonials-button:hover {
+    background: linear-gradient(113.96deg, #df6d3d 1.49%, #9b5506 101.44%);
+    transform: scale(1.1);
+}
+
+.testimonials-button:active {
+    background: linear-gradient(113.96deg, #4de71a 1.49%, #0a9d2c 101.44%);
 }
 
 .leave-foto {
     position: absolute;
     top: 621px;
     left: 1351px;
+}
+
+/* footer */
+
+.footer-menu {
+    background: #111115;
+    padding: 41px 220px 50px 220px;
+    height: 443px;
+}
+
+.footer-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe-form h3 {
+    margin: 0 0 14px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%; 
+    color: #FFFFFF;
+}
+
+.footer-input {
+    width: 228px;
+    height: 42px;
+    background: transparent;
+    border-radius: 2px;
+    border: 0.7px solid #FE9013;
+    padding: 10px 7px 10px 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #BDBDBD;
+}
+
+.footer-input:focus {
+    border: 0.7px solid #4B9200;
+    outline: none;
+}
+
+.footer-input:invalid:not(:placeholder-shown) {
+    border-color: #D31414;
+    color: #D31414;
+}
+
+.footer-input:valid:not(:placeholder-shown) {
+    border-color: green;
+}
+
+.subscribe-field button {
+    margin-left: 10px;
+    width: 129px;
+    height: 42px;
+    background: #F1F3F2;
+    border: 1px solid #D31414;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #D31414;
+    cursor: pointer;
+}
+
+.subscribe-field button:active {
+    border: 1px solid #4B9200;
+    color: #4B9200;
+}
+
+.footer-btn {
+    margin-top: 36px;
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border: transparent;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.footer-btn:hover {
+    background: linear-gradient(113.96deg, #df6d3d 1.49%, #9b5506 101.44%);
+    transform: scale(1.1);
+}
+
+.footer-btn:active {
+    background: linear-gradient(113.96deg, #4de71a 1.49%, #0a9d2c 101.44%);
+}
+
+.footer-links {
+    margin-top: 44px;
+    display: flex;
+}
+
+.social-links-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links-nav li{
+    list-style-type: none;
+}
+
+.social-links-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.social-link:active .social-network {
+    background:#4B9200;
+}
+
+.social-link:hover .social-network {
+    background: #F9804B;
+}
+
+.social-link:active .social-network-text {
+    color: #4B9200;
+}
+
+.social-link:hover .social-network-text {
+    color: #F9804B;
+}
+
+.social-network-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.social-network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.5);
+}
+
+.navigation.footer {
+    margin: 112px 0 0 288px;
+    padding: 0;
+}
+
+.design {
+    text-decoration: none;
+    margin: 93px 0 0 171px;
+}
+
+.design-text {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.design:active .design-text {
+    border-bottom: 1px solid #4B9200;
+    color: #4B9200;
 }
 
 
