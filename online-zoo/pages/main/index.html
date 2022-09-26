@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online-zoo</title>
     <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header class="menu">
         <div class="menu-container">
-            <a class="logo" href="index.html">
+            <a class="logo" href="../main/index.html">
                 <div class="main-title">
                     <h1>PetStory online</h1>
                     <img src="../../icons/bamboo.svg" alt="#">
@@ -21,7 +22,7 @@
                     <li><a class="active" href="index.html">About</a></li>
                     <li><a href="#">Map</a></li>
                     <li><a href="#">Zoos</a></li>
-                    <li><a href="#">Donate</a></li>
+                    <li><a href="../donate/index.html">Donate</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </nav>
@@ -137,7 +138,7 @@
                     <h2>Pick and feed a friend</h2>
                     <p>We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
                     <p>During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
-                    <p>Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider <br> a gift to our <a class="emergency-link" href="#">Emergency Support Fund</a> .</p>
+                    <p>Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider <br> a gift to our <a class="emergency-link" href="../donate/index.html">Emergency Support Fund</a> .</p>
                 </div>
                 <div class="pick-friend-donate">
                     <h3>How it works</h3>
@@ -165,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="pick-friend-btn">Feed a friend now</button>
+                <button class="pick-friend-btn" onclick="document.location='../donate/index.html'">Feed a friend now</button>
             </div>
         </section>
         <section class="testimonials">
@@ -244,7 +245,7 @@
     <footer class="footer-menu">
         <div class="footer-container">
             <div class="footer-head">
-                <a class="logo" href="#">
+                <a class="logo" href="../main/index.html">
                     <div class="main-title">
                         <h1>PetStory online</h1>
                         <img src="../../icons/bamboo.svg" alt="#">
@@ -254,11 +255,11 @@
                     <h3>Subscribe to our news</h3>
                     <form class="subscribe-field" action="">
                         <input class="footer-input" type="email" name="email" placeholder="Enter your email" required>
-                        <button>Submit</button>
+                        <button class="short-btn">Submit</button>
                     </form>
                 </div>
             </div>
-            <button class="footer-btn">donate for volunteers</button>
+            <button class="footer-btn" onclick="document.location='../donate/index.html'">donate for volunteers</button>
             <div class="footer-links">
                 <div class="social-links">
                     <ul class="social-links-nav">
