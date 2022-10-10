@@ -1,3 +1,105 @@
+/* Burger-menu */
+.hamb-menu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    z-index: 11;
+    padding: 10px 0 0 10px;
+    left: -100%;
+    transition: .3s all;
+}
+
+.hamb-menu.active {
+    left: 0;
+}
+
+.logo-hamb {
+    text-decoration: none;
+    transition: .2s all;
+    width: 65.6px;
+    height: 41.6px;
+    display: block;
+}
+
+.main-title-hamb {
+    width: 65.6px;
+    height: 41.6px;
+    text-align: center;
+    border: 0.8px solid #FE9013;
+    border-radius: 2px;
+    position: relative;
+}
+
+.bamboo-640px-hamb {
+    position: absolute;
+    bottom: 9px;
+    right: 47px;
+}
+
+.main-title-hamb h1 {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.2116px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+}
+
+.hamb-nav {
+    margin-top: 30.04px;
+}
+
+.adaptive-naviagation {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.adaptive-naviagation li {
+    list-style-type: none;
+}
+
+.adaptive-naviagation li a {
+    text-decoration: none;
+    color: #333B41;
+}
+
+.cross {
+    position: relative;
+    bottom: 262px;
+    left: 550px;
+}
+
+.cross-item-1 {
+    width: 40px;
+    height: 3px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.cross-item-2 {
+    width: 40px;
+    height: 3px;
+    background-color: #000000;
+    transform: rotate(135deg);
+    position: relative;
+    bottom: 1.5px;
+}
+
+
+
+
 /* header */
 
 .menu {
@@ -601,6 +703,20 @@
     position: relative;
 }
 
+.pets-wrapper {
+    width: 1158px;
+    overflow: hidden;
+}
+
+.pets-carousel {
+    width: 3474px;
+    position: relative;
+    height: 872px;
+    display: flex;
+    left: -1158px;
+    display: flex;
+}
+
 .pets-container {
     display: flex;
     flex-wrap: wrap;
@@ -611,7 +727,7 @@
 
 .pets-block {
     width: 366px;
-    height: 426px;
+    height: 421px;
     border: 0.2px solid #FA6F32;
     border-radius: 5px;
     overflow: hidden;
@@ -824,10 +940,49 @@
     display: none;
 }
 
+.transition_right {
+    animation-name: move-right;
+    animation-duration: 1s;
+}
+
+.transition_left {
+    animation-name: move-left;
+    animation-duration: 1s;
+}
+
+@keyframes move-left {
+    from {
+        left: -1158px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes move-right {
+    from {
+        left: -1158px;
+    }
+    to {
+        left: -2316px;
+    }
+}
+
 @media(max-width: 1000px) {
     .pets {
         height: 1075px;
         padding: 0 30px 140px 30px;
+    }
+
+    .pets-wrapper {
+        width: 941px;
+    }
+
+    .pets-carousel {
+        width: 2823px;
+        height: 800px;
+        position: relative;
+        left: -941px;
     }
 
     .pets-container {
@@ -849,16 +1004,7 @@
     }
 
     .pets-img {
-        display: none;
-    }
-
-    .pets-img-1000px {
-        display: block;
-        transition: .3s all;
-    }
-
-    .pets-img-640px {
-        display: none;
+        width: 294px;
     }
 
     .pets-block:hover .pets-img-1000px {
@@ -870,33 +1016,9 @@
         padding: 8px 14px 16px 14px;
     }
 
-    .pets-title-dekstop {
-       display: none;
-    }
-    
-    .pets-text-dekstop {
-        display: none;
-    }
-    
-    .pets-title-1000px {
-        display: block;
-    }
-    
-    .pets-text-1000px {
-        display: block;
-    }
-
-    .pets-title-640px {
-        display: none;
-    }
-
-    .pets-text-640px {
-        display: none;
-    }
-
-    .pets-block:nth-child(1),
-    .pets-block:nth-child(2),
-    .pets-block:nth-child(3){
+    .pets-container .pets-block:nth-child(1),
+    .pets-container .pets-block:nth-child(2),
+    .pets-container .pets-block:nth-child(3){
         margin-bottom: 50px;
     }
 
@@ -945,6 +1067,24 @@
     .strelitzia-pets-640px {
         display: none;
     }
+
+    @keyframes move-left {
+        from {
+            left: -941px;
+        }
+        to {
+            left: 0px;
+        }
+    }
+    
+    @keyframes move-right {
+        from {
+            left: -941px;
+        }
+        to {
+            left: -1882px;
+        }
+    }
     
 }
 
@@ -952,6 +1092,16 @@
     .pets {
         height: 971px;
         padding: 0 20px 100px 20px;
+    }
+
+    .pets-wrapper {
+        width: 600px;
+    }
+
+    .pets-carousel {
+        width: 1800px;
+        height: 756px;
+        left: -600px;
     }
 
     .pets-container {
@@ -967,8 +1117,8 @@
         height: 332px;
     }
 
-    .pets-block:nth-child(3),
-    .pets-block:nth-child(6) {
+    .pets-container .pets-block:nth-child(3),
+    .pets-container .pets-block:nth-child(6) {
         display: none;
     }
 
@@ -978,17 +1128,7 @@
     }
 
     .pets-img {
-        display: none;
-    }
-
-    .pets-img-1000px {
-        display: none;
-        transition: .3s all;
-    }
-
-    .pets-img-640px {
-        display: block;
-        transition: .3s all;
+        width: 285.24px;
     }
 
     .pets-block:hover .pets-img-640px {
@@ -1001,31 +1141,15 @@
     }
 
     .pets-title-dekstop {
-       display: none;
+        font-size: 12.4695px;
     }
     
     .pets-text-dekstop {
-        display: none;
-    }
-    
-    .pets-title-1000px {
-        display: none;
-    }
-    
-    .pets-text-1000px {
-        display: none;
+        font-size: 11.6901px;
     }
 
-    .pets-title-640px {
-        display: block;
-    }
-
-    .pets-text-640px {
-        display: block;
-    }
-
-    .pets-block:nth-child(1),
-    .pets-block:nth-child(2) {
+    .pets-container .pets-block:nth-child(1),
+    .pets-container .pets-block:nth-child(2) {
         margin-bottom: 60px;
     }
 
@@ -1074,12 +1198,40 @@
         bottom: 0px;
         display: block;
     }
+
+    @keyframes move-left {
+        from {
+            left: -600px;
+        }
+        to {
+            left: 0px;
+        }
+    }
+    
+    @keyframes move-right {
+        from {
+            left: -941px;
+        }
+        to {
+            left: -1200px;
+        }
+    }
 }
 
 @media(max-width: 320px) {
     .pets {
         height: 1526px;
         padding: 0 12px 60px 10px;
+    }
+
+    .pets-wrapper {
+        width: 285px;
+    }
+
+    .pets-carousel {
+        width: 841px;
+        height: 1388px;
+        left: -285px;
     }
 
     .pets-container {
@@ -1091,10 +1243,6 @@
         width: 285px;
         height: 1388px;
         gap: 20px;
-    }
-
-    .pets-title-dekstop {
-       display: none;
     }
 
     .pets-block:nth-child(1),

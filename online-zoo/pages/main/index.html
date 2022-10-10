@@ -9,6 +9,28 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <div class="hamb-menu">
+        <a class="logo-hamb" href="../main/index.html">
+            <div class="main-title-hamb">
+                <h1>PetStory online</h1>
+                <img class="bamboo-640px-hamb" src="../../icons/bamboo-640px-hamb.svg" alt="bamboo">
+            </div>
+        </a>
+        <nav class="hamb-nav">
+            <ul class="adaptive-naviagation">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Zoos</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Designed by ©</a></li>
+            </ul>
+        </nav>
+        <div class="cross">
+            <div class="cross-item-1"></div>
+            <div class="cross-item-2"></div>
+        </div>
+    </div>
     <header class="menu">
         <div class="menu-container">
             <a class="logo" href="../main/index.html">
@@ -63,109 +85,157 @@
             <img class="flower-foto-320px" src="../../images/flowerfoto1-320px.png" alt="Flowerphoto">
         </section>
         <section class="pets">
-            <div class="pets-container">
-                <div class="pets-block">
-                    <div class="pets-img-block">
-                        <img class="pets-img" id="pets-img" src="../../images/Pandas.jpg" alt="Pandas">
-                        <img class="pets-img-1000px" src="../../images/pandas-1000px.png" alt="Pandas">
-                        <img class="pets-img-640px" src="../../images/pandas-640px.png" alt="Pandas">
-                    </div>
-                    <div class="pets-description">
-                        <div class="pets-text" id="pets-text">
-                           <h2 class="pets-title-dekstop">giant Pandas</h2>
-                           <h2 class="pets-title-1000px">giant Pandas</h2>
-                           <h2 class="pets-title-640px">giant Pandas</h2>
-                           <p class="pets-text-dekstop">Native to Southwest China</p>
-                           <p class="pets-text-1000px">Native to Southwest China</p>
-                           <p class="pets-text-640px">Native to Southwest China</p>  
-                           
+            <div class="pets-wrapper">
+                <div class="pets-carousel">
+                    <div class="pets-container" id="pets-left">
+                        <!-- <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" src="../../images/Eagles.jpg" alt="Eagles">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text">
+                                   <h2 class="pets-title-dekstop">Eagles</h2>
+                                   <p class="pets-text-dekstop">Native to South America</p>  
+                                </div>
+                                <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
+                            </div>
                         </div>
-                        <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
-                    </div>
-                </div>
-                <div class="pets-block">
-                    <div class="pets-img-block">
-                        <img class="pets-img" src="../../images/Eagles.jpg" alt="Eagles">
-                        <img class="pets-img-1000px" src="../../images/Eagles-1000px.png" alt="Eagles">
-                        <img class="pets-img-640px" src="../../images/eagles-640px.png" alt="Eagles">
-                    </div>
-                    <div class="pets-description">
-                        <div class="pets-text">
-                           <h2 class="pets-title-dekstop">Eagles</h2>
-                           <h2 class="pets-title-1000px">Eagles</h2>
-                           <h2 class="pets-title-640px">Eagles</h2>
-                           <p class="pets-text-dekstop">Native to South America</p>
-                           <p class="pets-text-1000px">Native to South America</p>
-                           <p class="pets-text-640px">Native to South America</p>    
+                        <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" id="pets-img" src="../../images/Alligators-1000px.png" alt="Alligators">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text" id="pets-text">
+                                   <h2 class="pets-title-dekstop">Alligators</h2>
+                                   <p class="pets-text-dekstop">Native to Southeastern U.S.</p>
+                                </div>
+                                <img src="../../icons/meet-fish_icon.svg" alt="banana-bamboo_icon">
+                            </div>
                         </div>
-                        <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
-                    </div>
-                </div>
-                <div class="pets-block">
-                    <div class="pets-img-block">
-                        <img class="pets-img" src="../../images/Gorillas.jpg" alt="Gorillas">
-                        <img class="pets-img-1000px" src="../../images/Cheeatas-1000px.png" alt="Cheeatas">
-                    </div>
-                    <div class="pets-description">
-                        <div class="pets-text">
-                           <h2 class="pets-title-dekstop">Gorillas</h2>
-                           <h2 class="pets-title-1000px">cheetahs</h2>
-                           <p class="pets-text-dekstop">Native to Congo</p> 
-                           <p class="pets-text-1000px">Native to Africa</p>
+                        <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" src="../../images/Gorillas.jpg" alt="Gorillas">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text">
+                                   <h2 class="pets-title-dekstop">Gorillas</h2>
+                                   <p class="pets-text-dekstop">Native to Congo</p> 
+                                </div>
+                                <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
+                            </div>
                         </div>
-                        <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
-                    </div>
-                </div>
-                <div class="pets-block">
-                    <div class="pets-img-block">
-                        <img class="pets-img" src="../../images/Sloths.jpg" alt="Sloths">
-                        <img class="pets-img-1000px" src="../../images/Gorillas-1000px.png" alt="Gorillas">
-                        <img class="pets-img-640px" src="../../images/gorillas-640px.png" alt="Gorillas">
-                    </div>
-                    <div class="pets-description">
-                        <div class="pets-text">
-                           <h2 class="pets-title-dekstop">Two-toed Sloth</h2>
-                           <h2 class="pets-title-1000px">Gorillas</h2>
-                           <h2 class="pets-title-640px">Gorillas</h2>
-                           <p class="pets-text-dekstop">Mesoamerica, South America</p>
-                           <p class="pets-text-1000px">Native to Congo</p> 
-                           <p class="pets-text-640px">Native to Congo</p> 
+                        <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" src="../../images/Sloths.jpg" alt="Sloths">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text">
+                                   <h2 class="pets-title-dekstop">Two-toed Sloth</h2>
+                                   <p class="pets-text-dekstop">Mesoamerica, South America</p>
+                                </div>
+                                <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
+                            </div>
                         </div>
-                        <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
-                    </div>
-                </div>
-                <div class="pets-block">
-                    <div class="pets-img-block">
-                        <img class="pets-img" src="../../images/Cheeatas.jpg" alt="Cheetahs">
-                        <img class="pets-img-1000px" src="../../images/Alligators-1000px.png" alt="Alligators">
-                        <img class="pets-img-640px" src="../../images/alligators-640px.png" alt="Alligators">
-                    </div>
-                    <div class="pets-description">
-                        <div class="pets-text">
-                           <h2 class="pets-title-dekstop">cheetahs</h2>
-                           <h2 class="pets-title-1000px">Alligators</h2>
-                           <h2 class="pets-title-640px">Alligators</h2>
-                           <p class="pets-text-dekstop">Native to Africa</p> 
-                           <p class="pets-text-1000px">Native to Southeastern U. S.</p>
-                           <p class="pets-text-640px">Native to Southeastern U. S.</p>  
+                        <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" src="../../images/Penguins.jpg" alt="Penguins">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text">
+                                   <h2 class="pets-title-dekstop">Penguins</h2>
+                                   <p class="pets-text-dekstop">Native to Antarctica</p> 
+                                </div>
+                                <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
+                            </div>
                         </div>
-                        <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
+                        <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" src="../../images/Sloths.jpg" alt="Sloths">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text">
+                                   <h2 class="pets-title-dekstop">Two-toed Sloth</h2>
+                                   <p class="pets-text-dekstop">Mesoamerica, South America</p>
+                                </div>
+                                <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
+                            </div>
+                        </div> -->
                     </div>
-                </div>
-                <div class="pets-block">
-                    <div class="pets-img-block">
-                        <img class="pets-img" src="../../images/Penguins.jpg" alt="Penguins">
-                        <img class="pets-img-1000px" src="../../images/Penguins-1000px.png" alt="Penguins">
-                    </div>
-                    <div class="pets-description">
-                        <div class="pets-text">
-                           <h2 class="pets-title-dekstop">Penguins</h2>
-                           <h2 class="pets-title-1000px">Penguins</h2>
-                           <p class="pets-text-dekstop">Native to Antarctica</p> 
-                           <p class="pets-text-1000px">Native to Antarctica</p>
+                    <div class="pets-container" id="pets-center">
+                        <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" id="pets-img" src="../../images/Pandas.jpg" alt="Pandas">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text" id="pets-text">
+                                   <h2 class="pets-title-dekstop">giant Pandas</h2>
+                                   <p class="pets-text-dekstop">Native to Southwest China</p>
+                                </div>
+                                <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
+                            </div>
                         </div>
-                        <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
+                        <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" src="../../images/Eagles.jpg" alt="Eagles">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text">
+                                   <h2 class="pets-title-dekstop">Eagles</h2>
+                                   <p class="pets-text-dekstop">Native to South America</p>  
+                                </div>
+                                <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
+                            </div>
+                        </div>
+                        <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" src="../../images/Gorillas.jpg" alt="Gorillas">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text">
+                                   <h2 class="pets-title-dekstop">Gorillas</h2>
+                                   <p class="pets-text-dekstop">Native to Congo</p> 
+                                </div>
+                                <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
+                            </div>
+                        </div>
+                        <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" src="../../images/Sloths.jpg" alt="Sloths">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text">
+                                   <h2 class="pets-title-dekstop">Two-toed Sloth</h2>
+                                   <p class="pets-text-dekstop">Mesoamerica, South America</p>
+                                </div>
+                                <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
+                            </div>
+                        </div>
+                        <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" src="../../images/Cheeatas.jpg" alt="Cheetahs">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text">
+                                   <h2 class="pets-title-dekstop">cheetahs</h2>
+                                   <p class="pets-text-dekstop">Native to Africa</p>  
+                                </div>
+                                <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
+                            </div>
+                        </div>
+                        <div class="pets-block">
+                            <div class="pets-img-block">
+                                <img class="pets-img" src="../../images/Penguins.jpg" alt="Penguins">
+                            </div>
+                            <div class="pets-description">
+                                <div class="pets-text">
+                                   <h2 class="pets-title-dekstop">Penguins</h2>
+                                   <p class="pets-text-dekstop">Native to Antarctica</p> 
+                                </div>
+                                <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
+                            </div>
+                        </div>
                     </div>
+                    <div  class="pets-container" id="pets-right"></div>
                 </div>
             </div>
             <button class="pets-button">choose your favorite</button>
@@ -521,5 +591,92 @@
             </div>
         </div>
     </footer>
+    <div class="all-cards">
+        <div class="pets-block">
+            <div class="pets-img-block">
+                <img class="pets-img" id="pets-img" src="../../images/Pandas.jpg" alt="Pandas">
+            </div>
+            <div class="pets-description">
+                <div class="pets-text" id="pets-text">
+                   <h2 class="pets-title-dekstop">giant Pandas</h2>
+                   <p class="pets-text-dekstop">Native to Southwest China</p>
+                </div>
+                <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
+            </div>
+        </div>
+        <div class="pets-block">
+            <div class="pets-img-block">
+                <img class="pets-img" src="../../images/Eagles.jpg" alt="Eagles">
+            </div>
+            <div class="pets-description">
+                <div class="pets-text">
+                   <h2 class="pets-title-dekstop">Eagles</h2>
+                   <p class="pets-text-dekstop">Native to South America</p>  
+                </div>
+                <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
+            </div>
+        </div>
+        <div class="pets-block">
+            <div class="pets-img-block">
+                <img class="pets-img" src="../../images/Gorillas.jpg" alt="Gorillas">
+            </div>
+            <div class="pets-description">
+                <div class="pets-text">
+                   <h2 class="pets-title-dekstop">Gorillas</h2>
+                   <p class="pets-text-dekstop">Native to Congo</p> 
+                </div>
+                <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
+            </div>
+        </div>
+        <div class="pets-block">
+            <div class="pets-img-block">
+                <img class="pets-img" src="../../images/Sloths.jpg" alt="Sloths">
+            </div>
+            <div class="pets-description">
+                <div class="pets-text">
+                   <h2 class="pets-title-dekstop">Two-toed Sloth</h2>
+                   <p class="pets-text-dekstop">Mesoamerica, South America</p>
+                </div>
+                <img src="../../icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon">
+            </div>
+        </div>
+        <div class="pets-block">
+            <div class="pets-img-block">
+                <img class="pets-img" src="../../images/Cheeatas.jpg" alt="Cheetahs">
+            </div>
+            <div class="pets-description">
+                <div class="pets-text">
+                   <h2 class="pets-title-dekstop">cheetahs</h2>
+                   <p class="pets-text-dekstop">Native to Africa</p>  
+                </div>
+                <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
+            </div>
+        </div>
+        <div class="pets-block">
+            <div class="pets-img-block">
+                <img class="pets-img" src="../../images/Penguins.jpg" alt="Penguins">
+            </div>
+            <div class="pets-description">
+                <div class="pets-text">
+                   <h2 class="pets-title-dekstop">Penguins</h2>
+                   <p class="pets-text-dekstop">Native to Antarctica</p> 
+                </div>
+                <img src="../../icons/meet-fish_icon.svg" alt="meet-fish_icon">
+            </div>
+        </div>
+        <div class="pets-block">
+            <div class="pets-img-block">
+                <img class="pets-img" id="pets-img" src="../../images/Alligators-1000px.png" alt="Alligators">
+            </div>
+            <div class="pets-description">
+                <div class="pets-text" id="pets-text">
+                   <h2 class="pets-title-dekstop">Alligators</h2>
+                   <p class="pets-text-dekstop">Native to Southeastern U.S.</p>
+                </div>
+                <img src="../../icons/meet-fish_icon.svg" alt="banana-bamboo_icon">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
