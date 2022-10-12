@@ -49,6 +49,13 @@ input[type="number"]:focus {
     -moz-appearance: textfield;
 }
 
+input[type=range]  {
+    width: 200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 
 
 

@@ -1,3 +1,109 @@
+/* Burger-menu */
+
+.hamb-menu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 329px;
+    background: #FFFFFF;
+    z-index: 200;
+    padding: 10px 0 0 10px;
+    left: -100%;
+    transition: .3s all;
+}
+
+.hamb-menu.active {
+    left: 0;
+}
+
+.logo-hamb {
+    text-decoration: none;
+    transition: .2s all;
+    width: 65.6px;
+    height: 41.6px;
+    display: block;
+}
+
+.main-title-hamb {
+    width: 65.6px;
+    height: 41.6px;
+    text-align: center;
+    border: 0.8px solid #FE9013;
+    border-radius: 2px;
+    position: relative;
+}
+
+.bamboo-640px-hamb {
+    position: absolute;
+    bottom: 9px;
+    right: 47px;
+}
+
+.main-title-hamb h1 {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.2116px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+}
+
+.hamb-nav {
+    margin-top: 30.04px;
+}
+
+.adaptive-naviagation {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.adaptive-naviagation li {
+    list-style-type: none;
+}
+
+.adaptive-naviagation li a {
+    text-decoration: none;
+    color: #333B41;
+}
+
+.adaptive-naviagation li a.active {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent;
+}
+
+.cross {
+    position: relative;
+    bottom: 262px;
+    left: 550px;
+}
+
+.cross-item-1 {
+    width: 40px;
+    height: 3px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.cross-item-2 {
+    width: 40px;
+    height: 3px;
+    background-color: #000000;
+    transform: rotate(135deg);
+    position: relative;
+    bottom: 1.5px;
+}
+
 /* header */
 
 .menu {
@@ -1401,6 +1507,21 @@
     .bamboo-dekstop-footer {
         display: none;
     }
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.56);
+    z-index: 199;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.background.visible {
+    display: block;
 }
 
 
