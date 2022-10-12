@@ -155,10 +155,6 @@ const oskarPopup = document.querySelector('#oskar-pop');
 const fredPopup = document.querySelector('#fred-pop');
 const crossPopup = document.querySelectorAll('.x-popup');
 
-// function closePopup(e){
-//     if(e.target.classList.contains)
-// }
-
 michPopup.addEventListener('click', function (){
     if(window.innerWidth <= 640) {
         firstComm.classList.add('hidden');
@@ -179,6 +175,7 @@ fredPopup.addEventListener('click', function (){
         Overlay.classList.add('visible');
     }
 })
+
 crossPopup.forEach((item) => {
     item.addEventListener('click', function(){
         Overlay.classList.remove('visible');
@@ -187,12 +184,6 @@ crossPopup.forEach((item) => {
         thirdComm.classList.remove('hidden');
     })
 })
-// crossPopup.addEventListener('click', function() {
-//     Overlay.classList.remove('visible');
-//     firstComm.classList.remove('hidden');
-//     secondComm.classList.remove('hidden');
-//     thirdComm.classList.remove('hidden');
-// })
 
 Overlay.addEventListener('click', popupNone);
 
@@ -204,3 +195,7 @@ function popupNone(e) {
         thirdComm.classList.remove('hidden');
     }
 }
+
+const radio = document.querySelectorAll('.radio-donate');
+const number = document.querySelector('.donate-number-input');
+

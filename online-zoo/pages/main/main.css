@@ -2199,6 +2199,17 @@
         bottom: -31px;
         left: 267px;
     }
+
+    .popup-comment {
+        width: 320px;
+        height: 428px;
+        padding: 20px 36px 17px 17px;
+        position: fixed;
+        bottom: 40%;
+        left: 0%;
+        z-index: 200;
+        display: none;
+    }
 }
 
 /* footer */
