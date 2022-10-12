@@ -9,6 +9,28 @@
     <link rel="stylesheet" href="donate.css">
 </head>
 <body>
+    <div class="hamb-menu">
+        <a class="logo-hamb" href="../main/index.html">
+            <div class="main-title-hamb">
+                <h1>PetStory online</h1>
+                <img class="bamboo-640px-hamb" src="../../icons/bamboo-640px-hamb.svg" alt="bamboo">
+            </div>
+        </a>
+        <nav class="hamb-nav">
+            <ul class="adaptive-naviagation">
+                <li><a href="../main/index.html">About</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Zoos</a></li>
+                <li><a class="active" href="../donate/index.html">Donate</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Designed by ©</a></li>
+            </ul>
+        </nav>
+        <div class="cross">
+            <div class="cross-item-1"></div>
+            <div class="cross-item-2"></div>
+        </div>
+    </div>
     <header class="menu">
         <div class="menu-container">
             <a class="logo" href="../main/index.html">
@@ -67,20 +89,21 @@
                             <form action="">
                                 <input class="radio-donate"
                                 id="5000" type="radio"
+                                value="5000"
+                                name="donate">
+                                <input class="radio-donate" type="radio" value="2000"
+                                name="donate">
+                                <input class="radio-donate" type="radio" value="1000"
+                                name="donate">
+                                <input class="radio-donate" type="radio" value="500"
+                                name="donate">
+                                <input class="radio-donate" type="radio" value="250"
+                                name="donate">
+                                <input class="radio-donate" type="radio" value="100"
                                 name="donate" checked>
-                                <input class="radio-donate" type="radio"
+                                <input class="radio-donate" type="radio" value="50"
                                 name="donate">
-                                <input class="radio-donate" type="radio"
-                                name="donate">
-                                <input class="radio-donate" type="radio"
-                                name="donate">
-                                <input class="radio-donate" type="radio"
-                                name="donate">
-                                <input class="radio-donate" type="radio"
-                                name="donate">
-                                <input class="radio-donate" type="radio"
-                                name="donate">
-                                <input class="radio-donate" type="radio"
+                                <input class="radio-donate" type="radio" value="25"
                                 name="donate">
                             </form>
                             <ul class="dollar-list">
@@ -96,7 +119,8 @@
                         </div>
                     </div>
                     <form class="donate-number" action="">
-                        <input class="donate-number-input" type="number" name="number" min="25" max="5000" placeholder="Another amount">
+                        <input class="donate-number-input" type="number" name="number" value="100" min="25" max="5000"
+                        placeholder="Another amount">
                         <div class="dollar-icon"></div>
                     </form>
                     <form class="donate-radio" action="">
@@ -317,5 +341,7 @@
             </div>
         </div>
     </footer>
+    <div class="background"></div>
+    <script src="../donate/donate.js"></script>
 </body>
 </html>

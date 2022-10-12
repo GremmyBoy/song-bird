@@ -3,13 +3,28 @@
 const hamb = document.querySelector(".hamb");
 const Hambmenu = document.querySelector(".hamb-menu");
 const cross = document.querySelector(".cross");
+const Overlay = document.querySelector('.background');
 
 hamb.addEventListener('click', HambHandler);
-cross.addEventListener('click', HambHandler);
+cross.addEventListener('click', crossClose);
+Overlay.addEventListener('click', backgroundNone);
 
 function HambHandler(e) {
     e.preventDefault();
-    Hambmenu.classList.toggle('active');
+    Hambmenu.classList.add('active');
+    Overlay.classList.add('visible');
+}
+
+function backgroundNone(e) {
+    if (e.target.classList.contains('background')) {
+        Hambmenu.classList.remove('active');
+        Overlay.classList.remove('visible');
+    }
+}
+
+function crossClose() {
+    Hambmenu.classList.remove('active');
+    Overlay.classList.remove('visible');
 }
 
 // Slider
@@ -113,4 +128,79 @@ function createCardRight() {
     // return animalCard;
 }
 
-alert('Друзья, не успел доделать, кому нетрудно, проверьте пожалйста чуть позже. Если можно в последний день проверки. Благодарю за понимание) Если что пишите в дискорд');
+// Testimonials-scroll
+
+const Testimonials = document.querySelector('.testimonials-container');
+const scroll = document.querySelector('#tst-range');
+
+function tstScroll() {
+    let offset = 290;
+    if(window.innerWidth <= 1000){
+        offset = 318;
+    }
+    Testimonials.style.right = offset * scroll.value + 'px';
+}
+
+scroll.addEventListener('input', tstScroll);
+
+// alert('Друзья, не успел доделать, кому нетрудно, проверьте пожалйста чуть позже. Если можно в последний день проверки. Благодарю за понимание) Если что пишите в дискорд');
+
+// Testimonials-popup
+
+const firstComm = document.querySelector('#first-comment');
+const secondComm = document.querySelector('#second-comment');
+const thirdComm = document.querySelector('#third-comment');
+const michPopup = document.querySelector('#michael-pop');
+const oskarPopup = document.querySelector('#oskar-pop');
+const fredPopup = document.querySelector('#fred-pop');
+const crossPopup = document.querySelectorAll('.x-popup');
+
+// function closePopup(e){
+//     if(e.target.classList.contains)
+// }
+
+michPopup.addEventListener('click', function (){
+    if(window.innerWidth <= 640) {
+        firstComm.classList.add('hidden');
+        Overlay.classList.add('visible');
+    }
+})
+
+oskarPopup.addEventListener('click', function (){
+    if(window.innerWidth <= 640) {
+        secondComm.classList.add('hidden');
+        Overlay.classList.add('visible');
+    }
+})
+
+fredPopup.addEventListener('click', function (){
+    if(window.innerWidth <= 640) {
+        thirdComm.classList.add('hidden');
+        Overlay.classList.add('visible');
+    }
+})
+crossPopup.forEach((item) => {
+    item.addEventListener('click', function(){
+        Overlay.classList.remove('visible');
+        firstComm.classList.remove('hidden');
+        secondComm.classList.remove('hidden');
+        thirdComm.classList.remove('hidden');
+    })
+})
+// crossPopup.addEventListener('click', function() {
+//     Overlay.classList.remove('visible');
+//     firstComm.classList.remove('hidden');
+//     secondComm.classList.remove('hidden');
+//     thirdComm.classList.remove('hidden');
+// })
+
+Overlay.addEventListener('click', popupNone);
+
+function popupNone(e) {
+    if (e.target.classList.contains('background')) {
+        Overlay.classList.remove('visible');
+        firstComm.classList.remove('hidden');
+        secondComm.classList.remove('hidden');
+        thirdComm.classList.remove('hidden');
+    }
+}
